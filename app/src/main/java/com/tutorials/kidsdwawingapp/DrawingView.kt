@@ -23,6 +23,7 @@ class DrawingView(context: Context, attrs: AttributeSet) : View(context, attrs) 
         setUpDrawing()
     }
 
+    // Redo 기능도 구현해보면 좋음
     fun onClickUndo() {
         if (mPaths.size > 0) {
             mUndoPaths.add(mPaths.removeAt(mPaths.size - 1))
